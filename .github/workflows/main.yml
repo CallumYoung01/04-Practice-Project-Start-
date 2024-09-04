@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
+      - name: Check Context
+        run: echo "{{ toJSON(env) }}"
       - name: Install dependencies
         run: npm install
       - name: Lint

@@ -8,6 +8,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Check Context
         run: echo "${{ toJSON(github) }}"
+      - name: Check dir
+        run: echo ls
       - name: Install dependencies
         run: npm install
       - name: Lint

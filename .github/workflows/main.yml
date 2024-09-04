@@ -9,7 +9,7 @@ jobs:
       - name: Check Context
         run: echo "${{ toJSON(github) }}"
       - name: Check dir
-        run: echo ls
+        run: echo ${{ github.workspace }}
       - name: Install dependencies
         run: npm install
       - name: Lint

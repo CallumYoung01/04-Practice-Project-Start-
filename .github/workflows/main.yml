@@ -11,7 +11,7 @@ jobs:
       - name: Check dir
         run: echo ${{ github.workspace }}
       - name: Install dependencies
-        run: npm install
+        run: sudo npm install
       - name: Lint
         run: npm run lint
       - name: Test code

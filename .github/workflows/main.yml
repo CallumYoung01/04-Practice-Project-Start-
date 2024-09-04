@@ -9,7 +9,7 @@ jobs:
       - name: Check Context
         run: echo "${{ toJSON(github) }}"
       - name: Check dir
-        run: echo ${{ github.workspace }}
+        run: ls /home/runner/work/04-Practice-Project-Start-/04-Practice-Project-Start-/
       - name: Install dependencies
         run: sudo npm install
       - name: Lint

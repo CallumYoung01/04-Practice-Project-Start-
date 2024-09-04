@@ -11,7 +11,7 @@ jobs:
       - name: Check dir
         run: ls /home/runner/work/04-Practice-Project-Start-/04-Practice-Project-Start-/
       - name: Install dependencies
-        run: sudo npm install
+        run: npm ci
       - name: Lint
         run: npm run lint
       - name: Test code
